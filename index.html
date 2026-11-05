@@ -198,9 +198,9 @@ const K={
 const burger=cfg=>{let y=0,o='';cfg.forEach(([k,c,h])=>{o+=`<g transform="translate(0 ${y})"><g class="l">${K[k](c)}</g></g>`;y+=h});return `<svg viewBox="0 -100 400 ${y+150}" aria-hidden="true">${o}</svg>`};
 const BUN='#e0952b',PT=['patty','#4a2a1a',46],BB=['bunB',BUN,44];
 const B=[
- {n:'THE CLASSIC',d:'Der Klassiker. Saftiges Beef, geschmolzener Cheddar und unsere eigene Burgersauce.',i:['Beef Patty','Cheddar','Salat','Tomate','Gewürzgurken','Hausgemachte Burgersauce'],bg:'#ff3d12',l:[['bunT',BUN,95],['sauce','#ff8a3d',20],['leaf','#7fae3a',30],['slice','#e63b2e',22],['slice','#9db84a',22],['cheese','#ffc21a',30],PT,BB]},
- {n:'THE FIRE',d:'Für alle, die es etwas heißer mögen. Würzig, scharf und kompromisslos.',i:['Beef Patty','Pepper Jack Cheese','Jalapeños','Rote Zwiebeln','Spicy Sauce'],bg:'#1d0f0a',l:[['bunT','#c4421a',95],['sauce','#ff3d12',20],['slice','#b4457a',22],['slice','#3f8f2a',22],['cheese','#f6e7a8',30],PT,['bunB','#c4421a',44]]},
- {n:'THE GREEN',d:'Frisches Avocado-Aroma trifft auf saftiges Beef und eine cremige Sauce.',i:['Beef Patty','Guacamole','Cheddar','Rucola','Rote Zwiebeln','Creamy Sauce'],bg:'#6b7a2a',l:[['bunT','#d9a441',95],['sauce','#f4ecdc',20],['leaf','#2f7a2f',30],['slice','#b4457a',22],['cheese','#ffc21a',30],['sauce','#7fb23a',24],PT,['bunB','#d9a441',44]]}
+ {n:'THE CLASSIC',d:'',i:['Beef Patty','Cheddar','Salat','Tomate','Gewürzgurken','Hausgemachte Burgersauce'],bg:'#ff3d12',l:[['bunT',BUN,95],['sauce','#ff8a3d',20],['leaf','#7fae3a',30],['slice','#e63b2e',22],['slice','#9db84a',22],['cheese','#ffc21a',30],PT,BB]},
+ {n:'THE FIRE',d:'',i:['Beef Patty','Pepper Jack Cheese','Jalapeños','Rote Zwiebeln','Spicy Sauce'],bg:'#1d0f0a',l:[['bunT','#c4421a',95],['sauce','#ff3d12',20],['slice','#b4457a',22],['slice','#3f8f2a',22],['cheese','#f6e7a8',30],PT,['bunB','#c4421a',44]]},
+ {n:'THE GREEN',d:'',i:['Beef Patty','Guacamole','Cheddar','Rucola','Rote Zwiebeln','Creamy Sauce'],bg:'#6b7a2a',l:[['bunT','#d9a441',95],['sauce','#f4ecdc',20],['leaf','#2f7a2f',30],['slice','#b4457a',22],['cheese','#ffc21a',30],['sauce','#7fb23a',24],PT,['bunB','#d9a441',44]]}
 ];
 $('#hb').innerHTML=burger(B[0].l);
 $('#bl').innerHTML=B.map((b,i)=>`<article class="bi"><figure>${burger(b.l)}</figure><div class="info"><h3>${b.n}</h3><p>${b.d}</p><ul>${b.i.map(x=>`<li>${x}</li>`).join('')}</ul></div></article>`).join('');
