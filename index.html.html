@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>GRILL DISTRICT – Streetfood Culture | Frankfurt am Main</title>
+<meta name="description" content="GRILL DISTRICT: Ehrliches Streetfood in Frankfurt am Main. Saftige Burger, knusprige Wings, goldene Pommes und echte Imbissklassiker.">
+<meta name="theme-color" content="#14100d">
+<meta property="og:title" content="GRILL DISTRICT – Streetfood Culture">
+<meta property="og:description" content="Frankfurt. Hunger. Keine Kompromisse.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#14100d;--cream:#f4ecdc;--chili:#ff3d12;--yel:#ffc21a;--oli:#6b7a2a;--f:'Anton','Impact','Arial Narrow',sans-serif;--b:'Space Grotesk',system-ui,sans-serif;--p:clamp(1rem,4vw,3.5rem)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--ink);color:var(--cream);font:400 1rem/1.55 var(--b);overflow-x:clip}
+a{color:inherit;text-decoration:none}a:focus-visible,button:focus-visible{outline:3px solid var(--yel);outline-offset:3px}
+svg{display:block;overflow:visible}
+section,header,footer{position:relative;background:var(--bg,var(--ink))}
+[id]{scroll-margin-top:0}
+.mega{font:400 clamp(2.6rem,10vw,9.5rem)/.92 var(--f);text-transform:uppercase;letter-spacing:-.01em}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:99;opacity:.07;background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence baseFrequency='.8' numOctaves='2'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+.drip{position:absolute;left:0;top:0;width:100%;height:clamp(30px,5vw,70px);transform:translateY(-99%);color:var(--bg);fill:currentColor;z-index:3;overflow:hidden}
+/* nav */
+nav{position:fixed;inset:0 0 auto;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:calc(.9rem + env(safe-area-inset-top,0px)) var(--p) .9rem;transition:background .4s,padding .4s}
+nav.s{background:rgba(20,16,13,.85);backdrop-filter:blur(10px);padding-top:calc(.6rem + env(safe-area-inset-top,0px));padding-bottom:.6rem}
+.logo{font:1.5rem var(--f);letter-spacing:.04em;white-space:nowrap}.logo b{color:var(--chili);font-weight:400}
+nav ul{display:flex;gap:clamp(.8rem,3vw,2.2rem);list-style:none;align-items:center;font-size:.8rem;letter-spacing:.14em;font-weight:500}
+.l{position:relative;padding:.4rem 0}.l::after{content:"";position:absolute;left:0;bottom:0;height:2px;width:100%;background:var(--chili);transform:scaleX(0);transform-origin:left;transition:transform .3s}.l:hover::after{transform:scaleX(1)}
+.btn{display:inline-block;position:relative;overflow:hidden;isolation:isolate;background:var(--chili);color:#fff;padding:.9rem 1.6rem;border-radius:99px;font-weight:700;letter-spacing:.1em;font-size:.8rem}
+.btn::before{content:"";position:absolute;inset:0;background:var(--yel);transform:translateY(101%);transition:transform .35s;z-index:-1}.btn:hover::before{transform:none}.btn:hover{color:var(--ink)}
+@media(max-width:760px){.cta-n{display:none}.logo{font-size:1.05rem}nav ul{font-size:.68rem;letter-spacing:.08em}}
+/* hero */
+.hero{--bg:var(--ink);min-height:100svh;padding:6.5rem var(--p) 3rem;overflow:hidden;display:flex;flex-direction:column}
+.hero h1{position:relative}
+.w{display:block;overflow:hidden;padding:.04em 0}
+.ln{display:block;position:relative;z-index:1}.ln.front{z-index:3;color:transparent;-webkit-text-stroke:2px var(--cream)}
+.hb{position:relative;z-index:2;width:118%;margin:-4% -9% -6%}
+.hb svg{width:100%;height:auto}
+.hc{position:relative;z-index:4;max-width:400px}.hc p{margin-bottom:1.2rem}.hc .ey{font-size:.8rem;letter-spacing:.14em;color:var(--yel);font-weight:700}
+.fl{position:absolute;z-index:3}.fl svg{width:100%;animation:fl 5s ease-in-out infinite alternate}
+.c1{width:44px;left:6%;top:48%}.c2{width:64px;right:8%;top:30%}.c3{width:34px;right:30%;bottom:18%}
+@keyframes fl{to{transform:translateY(-16px) rotate(14deg)}}
+.scroll{position:absolute;right:var(--p);bottom:1.5rem;z-index:4;font-size:.7rem;letter-spacing:.2em;display:flex;align-items:center;gap:.7rem;writing-mode:vertical-rl}
+.scroll i{width:1px;height:50px;background:var(--cream);transform-origin:top;animation:sc 2s ease-in-out infinite}
+@keyframes sc{0%{transform:scaleY(0)}60%{transform:scaleY(1)}100%{transform:scaleY(1);opacity:0}}
+@media(min-width:900px){.hero{display:block}.hero h1{position:absolute;top:15vh;left:var(--p)}.hero h1 .mega{font-size:clamp(3rem,8.6vw,10rem)}
+.hb{position:absolute;right:-6vw;bottom:-14vh;width:56vw;margin:0}.hc{position:absolute;left:var(--p);bottom:8vh;max-width:380px}}
+/* burgers */
+.burgers{--bg:var(--chili);padding:5.5rem 0 2rem;color:var(--cream)}
+.bh{padding:0 var(--p);display:flex;gap:1.5rem;align-items:flex-end;justify-content:space-between;flex-wrap:wrap}
+.bh h2{font-size:clamp(2.2rem,7.5vw,7rem)}.bh p{max-width:28ch}
+.bi{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:2rem;padding:2rem var(--p)}
+.bi figure{order:2;height:min(70vw,480px);display:grid;place-items:center;min-height:0}
+.bi svg{height:100%;width:auto;max-width:100%}
+.info h3{font:clamp(2rem,5.5vw,5rem)/.95 var(--f)}.info p{margin-top:.8rem;max-width:34ch;font-size:1.05rem}
+.info ul{display:flex;flex-wrap:wrap;gap:.4rem;list-style:none;margin-top:1rem}.info li{border:1px solid currentColor;border-radius:99px;padding:.2rem .75rem;font-size:.75rem}
+@media(max-width:760px){.bi{grid-template-columns:1fr;gap:.5rem}.bi figure{order:0;height:50vw}.bh p{font-size:.85rem}}
+.fx .burgers{height:100svh;padding:4.8rem 0 0;display:flex;flex-direction:column;overflow:hidden}
+.fx .bl{position:relative;flex:1;min-height:0}
+.fx .bi{position:absolute;inset:0;padding-block:0}
+.fx .bi figure{height:100%;transform:translateY(-10svh)}.fx .bi svg{height:min(100%,60svh)}
+@media(max-width:760px){.fx .bi{display:block;padding:0}.fx .bi figure{position:absolute;inset:0 0 auto;height:44%;margin:0;transform:none}.fx .bi svg{height:100%}.fx .bi .info{position:absolute;left:var(--p);right:var(--p);bottom:.8rem}.fx .info h3{font-size:2rem}.fx .info p{font-size:.9rem;margin-top:.4rem}.fx .info ul{margin-top:.6rem}.fx .info li{font-size:.68rem;padding:.1rem .55rem}.fx .bh p{display:none}.fx .burgers{padding-top:4.2rem}}
+/* sides */
+.sides{--bg:var(--yel);color:var(--ink);padding:7rem 0 4rem}
+.sides h2{padding:0 var(--p);font-size:clamp(2.6rem,9vw,8.5rem)}
+.track{display:grid;gap:2.5rem;padding:2.5rem var(--p)}
+.sc{position:relative;display:flex;align-items:center;gap:1.5rem}
+.ic{width:min(42%,260px);flex:none;position:relative}.ic svg{position:relative;width:100%}
+.ic::before{content:"";position:absolute;inset:-6%;background:var(--k);border-radius:60% 40% 55% 45%/50% 60% 40% 50%}
+.sc h3{font:clamp(1.8rem,4vw,3.4rem)/.95 var(--f)}.sc p{margin-top:.5rem;max-width:30ch}
+@media(min-width:800px){.fx .sides{height:100svh;padding:6rem 0 0;display:flex;flex-direction:column;justify-content:center}
+.fx .track{display:flex;width:max-content;gap:6vw;padding-block:2rem}.fx .sc{flex:none;width:min(48vw,640px)}.fx .ic{width:min(22vw,300px)}}
+/* classic */
+.classic{--bg:var(--cream);color:var(--ink);padding:8rem var(--p) 5rem}
+.classic h2{font-size:clamp(2.6rem,8.5vw,8rem);margin-bottom:3rem}
+.cr{display:grid;grid-template-columns:1.1fr 1fr;align-items:center;gap:2rem;padding:2.2rem 0;border-top:2px solid var(--ink)}
+.cr:nth-child(odd) .vis{order:2}
+.cr h3{font:clamp(2.4rem,7vw,6.5rem)/.9 var(--f)}.cr p{margin-top:.8rem;max-width:36ch;font-size:1.05rem}
+.vis{background:var(--k);border-radius:36px 8px 36px 8px;padding:1.5rem;display:grid;place-items:center}.vis svg{width:min(100%,320px)}
+@media(max-width:760px){.cr{grid-template-columns:1fr}.cr .vis{order:0!important}}
+/* drinks */
+.drinks{--bg:var(--ink);padding:8rem var(--p) 6rem;text-align:center;overflow:hidden}
+.drinks h2{font-size:clamp(2.6rem,10vw,9rem);color:var(--yel)}
+.cans{display:flex;justify-content:center;flex-wrap:wrap;gap:clamp(.8rem,3vw,3rem);margin-top:4rem}
+.cb{width:clamp(78px,13vw,150px);aspect-ratio:1/2.1;border-radius:14px 14px 18px 18px/24px 24px 18px 18px;background:linear-gradient(90deg,rgba(0,0,0,.35),rgba(255,255,255,.3) 30%,rgba(0,0,0,0) 55%,rgba(0,0,0,.4)),var(--k);position:relative;display:grid;place-items:center;animation:fl 5s ease-in-out var(--d) infinite alternate}
+.cb::before{content:"";position:absolute;inset:0;border-radius:inherit;opacity:.35;background:radial-gradient(circle,#fff 1px,transparent 2px) 0 0/13px 17px}
+.cb span{position:relative;writing-mode:vertical-rl;transform:rotate(180deg);font:clamp(1.1rem,2.6vw,1.9rem) var(--f);letter-spacing:.06em;color:#fff}
+.dr{position:absolute;top:0;width:6px;height:14px;border-radius:50%;background:#7cc4ff;opacity:0;animation:dp 3.2s linear infinite}
+@keyframes dp{10%{opacity:.8}100%{transform:translateY(70vh);opacity:0}}
+/* location */
+.loc{--bg:var(--cream);color:var(--ink);padding:8rem var(--p) 6rem}
+.lg{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1.5rem,4vw,4rem);margin-top:2.5rem;align-items:center}
+.loc h2{font-size:clamp(2.6rem,8.5vw,8rem)}
+.loc address{font-style:normal;font:1.3rem/1.4 var(--b);font-weight:700;margin:1.5rem 0 .5rem}
+.tel{display:inline-block;font:2rem var(--f);margin-bottom:1.5rem;border-bottom:3px solid var(--chili)}
+.hrs{list-style:none;margin:1rem 0 1.5rem;max-width:420px}.hrs li{display:flex;justify-content:space-between;padding:.5rem .6rem;border-bottom:1px solid #14100d33}.hrs .on{background:var(--ink);color:var(--cream);border-radius:6px}
+.map{border-radius:36px 8px 36px 8px;overflow:hidden;background:#eadfc6}.map svg{width:100%;overflow:hidden}
+.pin{animation:pp 1.8s ease-out infinite;transform-origin:center;transform-box:fill-box}@keyframes pp{to{transform:scale(3.2);opacity:0}}
+@media(max-width:760px){.lg{grid-template-columns:1fr}}
+/* footer */
+#kontakt{--bg:var(--ink);padding:7rem 0 1.5rem;overflow:hidden}
+.big{padding:0 var(--p);font-size:clamp(3.4rem,15vw,15rem);color:transparent;-webkit-text-stroke:2px var(--cream);transform-origin:left bottom;transition:color .4s}.big:hover{color:var(--chili);-webkit-text-stroke-color:var(--chili)}
+.mq{display:flex;width:max-content;gap:2rem;animation:mq 24s linear infinite;font:clamp(1.2rem,3vw,2.4rem) var(--f);color:var(--chili);margin:2rem 0;white-space:nowrap;align-items:center}.mq svg{height:1.4em;width:auto}
+@keyframes mq{to{transform:translateX(-50%)}}
+.fg{padding:0 var(--p);display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-top:2rem}
+.fg h4{font:1.2rem var(--f);letter-spacing:.08em;color:var(--yel);margin-bottom:.6rem}.fg a{display:block;padding:.2rem 0}.fg a:hover{color:var(--chili)}
+.lw{padding:2rem var(--p) 0;margin-top:3rem;border-top:1px solid #f4ecdc33;display:flex;gap:1.5rem;flex-wrap:wrap;justify-content:space-between;font-size:.8rem}.lw div{display:flex;gap:1.2rem;flex-wrap:wrap}
+@media(max-width:760px){.fg{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="ch" viewBox="0 0 40 70"><path d="M10 6Q32 0 35 20Q37 42 12 66Q4 60 15 44Q23 28 8 16Z" fill="#ff3d12"/><path d="M9 15Q3 5 15 1" stroke="#7d9a2c" stroke-width="5" fill="none" stroke-linecap="round"/></symbol></svg>
+<nav id="nav">
+ <a class="logo" href="#home" aria-label="GRILL DISTRICT Startseite">GRILL<b>/</b>DISTRICT</a>
+ <ul><li><a class="l" href="#home">HOME</a></li><li><a class="l" href="#finde-uns">FINDE UNS</a></li><li><a class="l" href="#kontakt">KONTAKT</a></li><li class="cta-n"><a class="btn" href="#finde-uns">JETZT VORBEIKOMMEN</a></li></ul>
+</nav>
+
+<header id="home" class="hero">
+ <h1 class="mega"><span class="w"><span class="ln">FRANKFURT.</span></span><span class="w"><span class="ln front">HUNGER.</span></span><span class="w"><span class="ln">KEINE KOMPROMISSE.</span></span></h1>
+ <div class="hb" role="img" aria-label="Riesiger Cheeseburger mit Beef Patty, Cheddar, Salat und Tomate"><div id="hb"></div></div>
+ <span class="fl c1" data-s=".3"><svg viewBox="0 0 40 70"><use href="#ch"/></svg></span>
+ <span class="fl c2" data-s=".55"><svg viewBox="0 0 40 70"><use href="#ch"/></svg></span>
+ <span class="fl c3" data-s=".2"><svg viewBox="0 0 40 70"><use href="#ch"/></svg></span>
+ <div class="hc">
+  <p class="ey">STREETFOOD CULTURE · FRANKFURT AM MAIN</p>
+  <p>Willkommen im GRILL DISTRICT. Hier trifft ehrliches Streetfood auf kompromisslosen Geschmack. Saftige Burger, knusprige Wings, goldene Pommes und echte Imbissklassiker. Frisch zubereitet, ordentlich serviert und mitten in Frankfurt zu Hause.</p>
+  <a class="btn" href="#menu">ZUR SPEISEKARTE</a>
+ </div>
+ <div class="scroll" aria-hidden="true">SCROLL<i></i></div>
+</header>
+
+<section id="menu" class="burgers">
+ <div class="bh"><h2 class="mega">NOT JUST A BURGER.</h2><p>Saftiges Fleisch, frisch gebackene Buns und Zutaten, die zusammengehören. Keine halben Sachen.</p></div>
+ <div class="bl" id="bl"></div>
+</section>
+
+<section class="sides"><svg class="drip" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0 80V30Q60 0 120 30T240 50T360 20T480 45T600 25T720 55T840 20T960 50T1080 25T1200 55T1320 30T1440 40V80Z"/></svg>
+ <h2 class="mega">THE PERFECT SIDEKICK.</h2><div class="track" id="tr"></div></section>
+
+<section class="classic"><svg class="drip" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0 80V40Q80 10 160 40T320 20T480 55T640 25T800 50T960 20T1120 55T1280 25T1440 45V80Z"/></svg>
+ <h2 class="mega">OLD SCHOOL. NEW ATTITUDE.</h2><div id="cl"></div></section>
+
+<section class="drinks"><svg class="drip" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0 80V35Q90 5 180 35T360 25T540 55T720 20T900 50T1080 20T1260 55T1440 30V80Z"/></svg>
+ <h2 class="mega">WASH IT DOWN.</h2><div class="cans" id="cn"></div></section>
+
+<section id="finde-uns" class="loc"><svg class="drip" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0 80V30Q120 0 240 35T480 20T720 55T960 25T1200 50T1440 25V80Z"/></svg>
+ <h2 class="mega">GOOD FOOD. RIGHT HERE.</h2>
+ <div class="lg">
+  <div>
+   <p>Mitten in Frankfurt. Einfach vorbeikommen, Hunger mitbringen und genießen.</p>
+   <address>GRILL DISTRICT<br>Kaiserstraße 00<br>60311 Frankfurt am Main</address>
+   <a class="tel" href="tel:+4969000000000">069 00000000</a>
+   <ul class="hrs" id="hrs"><li data-d="1,2,3,4"><span>Montag – Donnerstag</span><span>11:00–22:00 Uhr</span></li><li data-d="5,6"><span>Freitag – Samstag</span><span>11:00–00:00 Uhr</span></li><li data-d="0"><span>Sonntag</span><span>12:00–21:00 Uhr</span></li></ul>
+   <p><b>Anfahrt:</b> Vom Hauptbahnhof sind es nur ein paar Schritte die Kaiserstraße entlang. S- und U-Bahn: Hauptbahnhof oder Willy-Brandt-Platz.</p><br>
+   <a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Kaiserstra%C3%9Fe+Frankfurt+am+Main">ROUTE PLANEN</a>
+  </div>
+  <div class="map"><svg viewBox="0 0 500 460" role="img" aria-label="Stilisierte Karte der Frankfurter Innenstadt mit dem GRILL DISTRICT an der Kaiserstraße">
+   <path d="M-10 380Q120 330 250 372T510 350V470H-10Z" fill="#8fb6c9"/>
+   <g fill="#d9cdb0"><rect x="20" y="20" width="90" height="70" rx="6"/><rect x="140" y="30" width="70" height="90" rx="6"/><rect x="300" y="30" width="110" height="60" rx="6"/><rect x="40" y="140" width="80" height="100" rx="6"/><rect x="330" y="140" width="120" height="70" rx="6"/><rect x="150" y="250" width="90" height="60" rx="6"/><rect x="390" y="250" width="80" height="70" rx="6"/></g>
+   <g stroke="#fff" stroke-width="8" fill="none" stroke-linecap="round"><path d="M0 120H500M130 0V380M290 0V360M0 240H500M440 0V350"/></g>
+   <path id="route" d="M50 70L230 190L370 300" stroke="#ff3d12" stroke-width="12" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+   <circle class="pin" cx="230" cy="190" r="12" fill="#ff3d12"/><circle cx="230" cy="190" r="12" fill="#ff3d12" stroke="#14100d" stroke-width="4"/>
+   <g font-family="Space Grotesk,sans-serif" font-weight="700" font-size="14" fill="#14100d"><rect x="14" y="28" width="104" height="26" rx="13" fill="#14100d"/><text x="26" y="46" fill="#f4ecdc">HAUPTBAHNHOF</text><text x="248" y="176">GRILL DISTRICT</text><text x="338" y="320" font-size="12">Willy-Brandt-Platz</text><text x="380" y="125" font-size="12">Römer</text><text x="30" y="420" fill="#fff" font-size="16" letter-spacing="6">MAIN</text></g>
+  </svg></div>
+ </div>
+</section>
+
+<footer id="kontakt"><svg class="drip" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0 80V40Q100 5 200 40T400 25T600 55T800 25T1000 50T1200 20T1440 45V80Z"/></svg>
+ <h2 class="big mega">SEE YOU HUNGRY.</h2>
+ <div class="mq" aria-hidden="true" id="mq"></div>
+ <p class="fg" style="margin-top:0;display:block;font-size:1.3rem">Good food. Good people. Frankfurt.</p>
+ <div class="fg">
+  <div><h4>KONTAKT</h4><p>GRILL DISTRICT<br>Kaiserstraße 00<br>60311 Frankfurt am Main</p><a href="tel:+4969000000000">069 00000000</a><a href="mailto:hallo@grilldistrict.de">hallo@grilldistrict.de</a></div>
+  <div><h4>SOCIAL</h4><a href="#" aria-label="Instagram">Instagram</a><a href="#" aria-label="TikTok">TikTok</a></div>
+  <div><h4>ÖFFNUNGSZEITEN</h4><p>Mo–Do 11–22 Uhr<br>Fr–Sa 11–00 Uhr<br>So 12–21 Uhr</p></div>
+ </div>
+ <div class="lw"><small>© 2026 GRILL DISTRICT – Streetfood Culture</small><div><a href="#">Impressum</a><a href="#">Datenschutz</a><a href="#">Cookie-Einstellungen</a></div></div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script>
+const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
+/* ---------- SVG food illustrations ---------- */
+const SE=[[120,48],[170,30],[230,38],[285,60],[200,70],[145,82],[260,88]].map(([x,y],i)=>`<ellipse cx="${x}" cy="${y}" rx="9" ry="4.5" fill="#ffe7b0" transform="rotate(${i*37} ${x} ${y})"/>`).join('');
+const K={
+ bunT:c=>`<path d="M48 100Q52 6 200 6T352 100Q352 112 336 112H64Q48 112 48 100Z" fill="${c}"/><path d="M82 44Q110 18 150 14" stroke="#fff" stroke-opacity=".35" stroke-width="8" stroke-linecap="round" fill="none"/>${SE}`,
+ bunB:c=>`<path d="M52 0H348Q348 40 316 44H84Q52 40 52 0Z" fill="${c}"/>`,
+ patty:c=>`<rect x="40" width="320" height="44" rx="22" fill="${c}"/><path d="M80 14H320M70 30H330" stroke="#000" stroke-opacity=".25" stroke-width="4" stroke-linecap="round"/>`,
+ cheese:c=>`<path d="M36 0H364L330 16L300 54L268 18H138L104 44L72 16Z" fill="${c}"/>`,
+ leaf:c=>`<path d="M32 12Q66 -14 100 12T166 12T232 12T298 12T368 12V28Q334 48 300 28T234 28T168 28T102 28T34 28Z" fill="${c}"/>`,
+ sauce:c=>`<path d="M44 8Q120 28 200 8T356 8V20Q300 40 200 24T44 20Z" fill="${c}"/>`,
+ slice:c=>[80,150,225,300].map(x=>`<ellipse cx="${x}" cy="12" rx="34" ry="11" fill="${c}" stroke="#0003" stroke-width="3"/>`).join('')
+};
+const burger=(cfg,P=110)=>{let y=0,o='';cfg.forEach(([k,c,h])=>{o+=`<g transform="translate(0 ${y})"><g class="l">${K[k](c)}</g></g>`;y+=h});return `<svg viewBox="0 -${P} 400 ${y+2*P}" aria-hidden="true">${o}</svg>`};
+const BUN='#e0952b',PT=['patty','#4a2a1a',46],BB=['bunB',BUN,44];
+const B=[
+ {n:'THE CLASSIC',d:'Der Klassiker. Saftiges Beef, geschmolzener Cheddar und unsere eigene Burgersauce.',i:['Beef Patty','Cheddar','Salat','Tomate','Gewürzgurken','Hausgemachte Burgersauce'],bg:'#ff3d12',l:[['bunT',BUN,95],['sauce','#ff8a3d',20],['leaf','#7fae3a',30],['slice','#e63b2e',22],['slice','#9db84a',22],['cheese','#ffc21a',30],PT,BB]},
+ {n:'THE FIRE',d:'Für alle, die es etwas heißer mögen. Würzig, scharf und kompromisslos.',i:['Beef Patty','Pepper Jack Cheese','Jalapeños','Rote Zwiebeln','Spicy Sauce'],bg:'#1d0f0a',l:[['bunT','#c4421a',95],['sauce','#ff3d12',20],['slice','#b4457a',22],['slice','#3f8f2a',22],['cheese','#f6e7a8',30],PT,['bunB','#c4421a',44]]},
+ {n:'THE GREEN',d:'Frisches Avocado-Aroma trifft auf saftiges Beef und eine cremige Sauce.',i:['Beef Patty','Guacamole','Cheddar','Rucola','Rote Zwiebeln','Creamy Sauce'],bg:'#6b7a2a',l:[['bunT','#d9a441',95],['sauce','#f4ecdc',20],['leaf','#2f7a2f',30],['slice','#b4457a',22],['cheese','#ffc21a',30],['sauce','#7fb23a',24],PT,['bunB','#d9a441',44]]}
+];
+$('#hb').innerHTML=burger(B[0].l,24);
+$('#bl').innerHTML=B.map((b,i)=>`<article class="bi"><figure>${burger(b.l)}</figure><div class="info"><h3>${b.n}</h3><p>${b.d}</p><ul>${b.i.map(x=>`<li>${x}</li>`).join('')}</ul></div></article>`).join('');
+const st=(n,c)=>`<g fill="${c}">${[0,1,2,3,4,5,6].map(i=>`<rect x="${70+i*24}" y="${50+(i%3)*16}" width="20" height="190" rx="7" transform="rotate(${(i-3)*7} ${80+i*24} 240)"/>`).join('')}</g>`;
+const IC={
+ fries:`<svg viewBox="0 0 300 300" aria-hidden="true">${st(0,'#ffd23f')}<path d="M55 170H245L228 280H72Z" fill="#ff3d12"/></svg>`,
+ sweet:`<svg viewBox="0 0 300 300" aria-hidden="true">${st(0,'#f7842a')}<path d="M55 170H245L228 280H72Z" fill="#f4ecdc"/></svg>`,
+ rings:`<svg viewBox="0 0 300 300" aria-hidden="true"><g fill="none" stroke="#e8a33c" stroke-width="28"><circle cx="105" cy="120" r="56"/><circle cx="195" cy="165" r="56"/><circle cx="120" cy="210" r="48"/></g><g fill="none" stroke="#fff" stroke-opacity=".35" stroke-width="5"><circle cx="105" cy="120" r="64"/><circle cx="195" cy="165" r="64"/></g></svg>`,
+ wings:`<svg viewBox="0 0 300 300" aria-hidden="true"><g transform="rotate(-28 150 150)"><ellipse cx="150" cy="120" rx="76" ry="54" fill="#c2511c"/><ellipse cx="130" cy="104" rx="40" ry="18" fill="#e0752f"/><rect x="140" y="165" width="20" height="78" fill="#f4ecdc"/><circle cx="138" cy="248" r="14" fill="#f4ecdc"/><circle cx="162" cy="248" r="14" fill="#f4ecdc"/></g></svg>`,
+ curry:`<svg viewBox="0 0 300 220" aria-hidden="true"><g transform="rotate(-12 150 110)"><rect x="30" y="70" width="240" height="64" rx="32" fill="#b5532a"/><path d="M60 80Q100 60 150 82T250 78V104Q200 120 150 100T60 108Z" fill="#e8401a"/><g fill="#ffc21a">${[90,130,170,210].map((x,i)=>`<circle cx="${x}" cy="${86+i%2*14}" r="5"/>`).join('')}</g></g></svg>`,
+ frika:`<svg viewBox="0 0 300 220" aria-hidden="true"><ellipse cx="150" cy="115" rx="110" ry="80" fill="#8a4b24"/><ellipse cx="120" cy="85" rx="56" ry="26" fill="#a65f2d"/><g fill="#5a2f14">${[[100,120],[160,140],[200,100],[140,95],[210,140]].map(([x,y])=>`<circle cx="${x}" cy="${y}" r="6"/>`).join('')}</g><path d="M70 150Q150 190 235 140" stroke="#ffc21a" stroke-width="10" fill="none" stroke-linecap="round"/></svg>`,
+ schnitzel:`<svg viewBox="0 0 300 220" aria-hidden="true"><path d="M30 120Q20 50 100 36T240 50Q290 90 262 150T150 196T50 170Z" fill="#e0a040"/><g fill="#f2c36a">${[[90,70],[150,60],[210,80],[120,120],[190,130],[80,140],[230,125]].map(([x,y])=>`<circle cx="${x}" cy="${y}" r="9"/>`).join('')}</g><path d="M220 150a46 46 0 0 0 70 -30Z" fill="#ffe14a" transform="translate(-20 40)"/></svg>`
+};
+const SD=[['GOLDEN FRIES','Klassische, goldbraune Pommes mit knuspriger Außenseite und weichem Kern.','fries','#ff3d12'],['SWEET POTATO FRIES','Knusprige Süßkartoffelpommes mit einer leicht süßlichen Note.','sweet','#6b7a2a'],['ONION RINGS','Goldbraun frittierte Zwiebelringe mit knuspriger Panade.','rings','#14100d'],['CHICKEN WINGS','Saftige Chicken Wings mit einer würzigen Marinade und knuspriger Oberfläche.','wings','#ff3d12']];
+$('#tr').innerHTML=SD.map(s=>`<article class="sc"><div class="ic" style="--k:${s[3]}">${IC[s[2]]}</div><div><h3>${s[0]}</h3><p>${s[1]}</p></div></article>`).join('');
+const CL=[['CURRYWURST','Eine saftige Bratwurst mit hausgemachter Currysauce und einer würzigen Currynote.','curry','#ff3d12'],['FRISCHE FRIKADELLEN','Herzhafte Frikadellen, frisch zubereitet und kräftig gewürzt.','frika','#ffc21a'],['SCHNITZEL','Knusprig paniertes Schnitzel mit goldbrauner Kruste.','schnitzel','#9db84a']];
+$('#cl').innerHTML=CL.map(c=>`<article class="cr"><div class="vis" style="--k:${c[3]}">${IC[c[2]]}</div><div><h3>${c[0]}</h3><p>${c[1]}</p></div></article>`).join('');
+const DR=[['Coca-Cola','#c8102e'],['Coca-Cola Zero','#1b1b1b'],['Fanta','#ff8a00'],['Sprite','#1fa34a'],['Wasser','#4aa3df'],['Eistee','#c98a2b']];
+$('#cn').innerHTML=DR.map((d,i)=>`<div class="can"><div class="cb" style="--k:${d[1]};--d:-${i*.8}s"><span>${d[0].toUpperCase()}</span></div></div>`).join('')+Array.from({length:12},(_,i)=>`<i class="dr" style="left:${8+i*7.6}%;animation-delay:-${(i*.9)%3.2}s"></i>`).join('');
+$('#mq').innerHTML=Array(12).fill('SEE YOU HUNGRY<svg viewBox="0 0 40 70"><use href="#ch"/></svg>').join('');
+const dy=new Date().getDay();$$('#hrs li').forEach(l=>l.dataset.d.split(',').includes(String(dy))&&l.classList.add('on'));
+addEventListener('scroll',()=>$('#nav').classList.toggle('s',scrollY>40),{passive:true});
+/* ---------- Motion ---------- */
+if(window.gsap&&window.ScrollTrigger&&!matchMedia('(prefers-reduced-motion:reduce)').matches){
+ gsap.registerPlugin(ScrollTrigger);document.documentElement.classList.add('fx');
+ const sc=(trg,vars)=>({trigger:trg,start:'top bottom',end:'bottom top',scrub:true,...vars});
+ // Hero: one orchestrated entrance, then scroll-driven burger
+ gsap.timeline({defaults:{ease:'expo.out'},onComplete:()=>heroScroll()})
+  .from('.ln',{yPercent:110,duration:1.2,stagger:.14})
+  .from('.hb',{y:240,scale:.7,rotation:-24,opacity:0,duration:1.6},'-=.9')
+  .from('.fl',{scale:0,duration:.9,stagger:.12},'-=1')
+  .from('.hc,.scroll,nav',{opacity:0,y:20,duration:1},'-=.7');
+ const heroScroll=()=>{const h=gsap.timeline({defaults:{ease:'none'},scrollTrigger:{trigger:'.hero',start:'top top',end:'bottom top',scrub:true,invalidateOnRefresh:true}});h.to('#hb',{rotation:10,scale:1.06,yPercent:-6,immediateRender:false},0);$$('[data-s]').forEach(el=>h.to(el,{y:()=>-innerHeight*el.dataset.s*.8,immediateRender:false},0))};
+ 
+ 
+ // Burgers: pinned exploded-view film, 3 burgers, background shifts per burger
+ const sec=$('.burgers'),bi=$$('.bi'),mob=innerWidth<760;
+ gsap.set(bi.slice(1),{autoAlpha:0});
+ const tl=gsap.timeline({scrollTrigger:{trigger:sec,start:'top top',end:'+='+(mob?240:320)+'%',pin:true,scrub:.6,anticipatePin:1}});
+ bi.forEach((el,i)=>{
+  const ls=$$('.l',el),n=ls.length,svg=$('svg',el);
+  if(i)tl.to(bi[i-1],{autoAlpha:0,xPercent:-10,duration:.5})
+   .to(sec,{backgroundColor:B[i].bg,duration:.5},'<')
+   .fromTo(el,{autoAlpha:0,xPercent:10},{autoAlpha:1,xPercent:0,duration:.5},'<.1');
+  tl.to(ls,{y:k=>(k-(n-1)/2)*(mob?18:34),duration:1,ease:'power2.out'})
+   .fromTo(svg,{rotation:-7},{rotation:7,duration:2,ease:'none'},'<')
+   .to(ls,{y:0,duration:1,ease:'power2.inOut'},'<1');
+ });
+ // Sides: horizontal film on desktop, stacked reveals on mobile/tablet
+ ScrollTrigger.matchMedia({
+  '(min-width:800px)':()=>{
+   const tr=$('.track'),d=()=>tr.scrollWidth-innerWidth+60;
+   const tw=gsap.to(tr,{x:()=>-d(),ease:'none',scrollTrigger:{trigger:'.sides',start:'top top',end:()=>'+='+d(),pin:true,scrub:.6,invalidateOnRefresh:true,anticipatePin:1}});
+   $$('.sc .ic').forEach(ic=>gsap.fromTo(ic,{rotation:-22},{rotation:22,ease:'none',scrollTrigger:{trigger:ic,containerAnimation:tw,start:'left right',end:'right left',scrub:true}}));
+  },
+  '(max-width:799px)':()=>$$('.sc').forEach(c=>{
+   gsap.from(c,{y:60,opacity:0,duration:.8,scrollTrigger:{trigger:c,start:'top 88%'}});
+   gsap.fromTo($('.ic',c),{rotation:-14},{rotation:14,ease:'none',scrollTrigger:sc(c)});
+  })
+ });
+ // Classic: mask reveals + counter-moving type
+ $$('.cr').forEach(r=>{
+  gsap.fromTo($('.vis',r),{clipPath:'inset(0 100% 0 0)'},{clipPath:'inset(0 0% 0 0)',ease:'none',scrollTrigger:{trigger:r,start:'top 85%',end:'top 40%',scrub:true}});
+  gsap.fromTo($('svg',r),{rotation:-18,scale:.8},{rotation:10,scale:1.08,ease:'none',scrollTrigger:sc(r)});
+  gsap.fromTo($('h3',r),{xPercent:-8},{xPercent:6,ease:'none',scrollTrigger:sc(r)});
+ });
+ // Drinks: cans rise at different speeds
+ $$('.can').forEach((c,i)=>gsap.fromTo(c,{y:110+(i%3)*50},{y:-70-(i%2)*50,ease:'none',scrollTrigger:sc('.drinks')}));
+ // Location: route draws itself
+ const p=$('#route'),len=p.getTotalLength();
+ gsap.set(p,{strokeDasharray:len,strokeDashoffset:len});
+ gsap.to(p,{strokeDashoffset:0,ease:'none',scrollTrigger:{trigger:'.loc',start:'top 55%',end:'center 45%',scrub:true}});
+ // Footer: headline scales into place
+ gsap.fromTo('.big',{scale:.65},{scale:1,ease:'none',scrollTrigger:{trigger:'#kontakt',start:'top bottom',end:'top 25%',scrub:true}});
+ addEventListener('load',()=>ScrollTrigger.refresh());
+ document.fonts&&document.fonts.ready.then(()=>ScrollTrigger.refresh());
+}
+</script>
+</body>
+</html>
